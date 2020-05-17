@@ -1,0 +1,18 @@
+
+
+dependencies {
+
+    api platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+    api project(":mybatis-jpa-mapper-core")
+    api 'org.springframework.boot:spring-boot-autoconfigure'
+    optional 'org.mybatis:mybatis-spring:1.3.2'
+    optional 'org.mybatis:mybatis:3.4.6'
+    optional 'org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:1.3.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+jar {
+    manifest {
+        attributes 'Automatic-Module-Name': 'mybatis-jpa-mapper-spring-boot-autoconfigure'
+    }
+}

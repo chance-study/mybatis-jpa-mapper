@@ -1,0 +1,11 @@
+description = 'mybatis-jpa-mapper-spring-boot-starter'
+
+dependencies {
+    api project(":mybatis-jpa-mapper-spring-boot:mybatis-jpa-mapper-spring-boot-autoconfigure")
+}
+
+jar {
+    manifest {
+        attributes 'Automatic-Module-Name': 'spring.boot.starter'
+    }
+}
